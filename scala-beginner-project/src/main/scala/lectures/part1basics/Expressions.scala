@@ -46,4 +46,12 @@ object Expressions extends App {
   }
   println(someOtherValue)
 
+  def func() = {
+    var x = List("hi", "lo")
+    var y = for (elem <- x if (elem.contains("h")))
+    yield elem
+    println(y)
+  }
+
+  func()
 }
