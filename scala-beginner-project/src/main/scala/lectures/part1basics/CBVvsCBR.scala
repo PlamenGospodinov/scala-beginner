@@ -18,5 +18,6 @@ object CBVvsCBR extends App {
   def infinite(): Int = 1 + infinite()
 
   def printFirst(n: Int, y: => Int) = println(n)
+
   printFirst(34, infinite())
 }

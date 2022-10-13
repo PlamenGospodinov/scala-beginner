@@ -1,10 +1,11 @@
 package lectures.part2oop
 
-object AbstractDataTypes extends App{
+object AbstractDataTypes extends App {
 
   // abstract members
   abstract class Animal {
     val creatureType: String
+
     def eat: Unit
   }
 

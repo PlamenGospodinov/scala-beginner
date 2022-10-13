@@ -63,7 +63,7 @@ object Recursion extends App {
     }
 
     if (n <= 2) 1
-    else (fiboTailRec(2 , 1, 1))
+    else (fiboTailRec(2, 1, 1))
   }
 
   println(fibonacci(9))

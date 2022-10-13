@@ -2,7 +2,7 @@ package lectures.part2oop
 
 import java.time.Year
 
-object OOBasics extends App{
+object OOBasics extends App {
 
   val person = new Person("John", 22)
   println(person.age)
@@ -21,7 +21,7 @@ object OOBasics extends App{
 }
 
 //constructor
-class Person(val name: String,val age: Int = 0) {
+class Person(val name: String, val age: Int = 0) {
   //body
   val x = 2
 
@@ -34,6 +34,7 @@ class Person(val name: String,val age: Int = 0) {
 
   //multiple constructors
   def this(name: String) = this(name, 0)
+
   def this() = this("John Due")
 }
 
@@ -76,8 +77,8 @@ class Counter(val num: Int = 0) {
   }
 
   def increase(n: Int): Counter = {
-    if(n<=0) this
-    else increase.increase(n-1)
+    if (n <= 0) this
+    else increase.increase(n - 1)
   }
 
   def decrease(n: Int): Counter = {

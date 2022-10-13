@@ -9,6 +9,7 @@ object DefaultArgs extends App {
   val fact10 = trFact(10)
 
   def savePicture(format: String = "jpg", width: Int = 1920, height: Int = 1080): Unit = println("saving picture")
+
   savePicture(width = 800)
   /*
   1. Pass in every leading argument

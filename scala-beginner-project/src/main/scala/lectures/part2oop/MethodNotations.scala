@@ -4,7 +4,7 @@ import scala.language.postfixOps
 
 object MethodNotations extends App {
 
-  class Person(val name: String,val favouriteMovie: String, val age: Int = 0) {
+  class Person(val name: String, val favouriteMovie: String, val age: Int = 0) {
 
     def likes(movie: String): Boolean = movie == favouriteMovie
 
@@ -19,7 +19,7 @@ object MethodNotations extends App {
     def apply(): String = s"Hi, my name is $name and I like $favouriteMovie"
 
     def +(nickname: String): Person = {
-      new Person(name+s" $nickname", favouriteMovie)
+      new Person(name + s" $nickname", favouriteMovie)
     }
 
     def unary_+ : Person = new Person(name, favouriteMovie, age + 1)

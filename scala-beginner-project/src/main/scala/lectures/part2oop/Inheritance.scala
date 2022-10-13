@@ -1,10 +1,12 @@
 package lectures.part2oop
 
-object Inheritance extends App{
+object Inheritance extends App {
 
   class Animal {
     val creatureType: String = "Animal"
+
     private def specific = println("You can't access me")
+
     protected def eat = println("nomnom")
   }
 
@@ -23,6 +25,7 @@ object Inheritance extends App{
   class Person(name: String, age: Int) {
     def this(name: String) = this(name, 0)
   }
+
   class Adult(name: String, age: Int, idCard: String) extends Person(name)
 
   //overriding
@@ -31,6 +34,7 @@ object Inheritance extends App{
       super.eat
       println("woof, mnm")
   }
+
   val dog = new Dog("K9")
   dog.eat
 

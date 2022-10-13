@@ -5,6 +5,7 @@ object Objects extends App {
   //Scala doesnt have class-level functionality "static"
   object Person {
     val N_EYES = 2
+
     def canFly: Boolean = false
 
     //factory method
@@ -22,7 +23,7 @@ object Objects extends App {
   println(mary == john)
   println(mary2 == john2)
 
-  class Person (val name: String) {
+  class Person(val name: String) {
     // instance-level functionality
   }
   //companions

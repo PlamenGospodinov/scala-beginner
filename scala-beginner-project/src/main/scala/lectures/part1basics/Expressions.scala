@@ -49,7 +49,7 @@ object Expressions extends App {
   def func() = {
     var x = List("hi", "lo")
     var y = for (elem <- x if (elem.contains("h")))
-    yield elem
+      yield elem
     println(y)
   }
 

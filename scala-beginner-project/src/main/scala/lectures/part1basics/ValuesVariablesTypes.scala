@@ -1,6 +1,6 @@
 package lectures.part1basics
 
-object ValuesVariablesTypes extends App{
+object ValuesVariablesTypes extends App {
 
   //vals are immutable
   val x: Int = 42
